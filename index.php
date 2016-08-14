@@ -106,7 +106,6 @@ $random_fws = [
 $random_js_fw_github = r($random_fws);
 
 $abouts = [
-    "$fw_name can help you build better websites using the latest and greatest JS technology! Just install with your favourite package manager and start going, no strings attached!",
     "Build powerful web and mobile apps that scale",
     "$fw_name is a realtime, open-source backend for JavaScript apps.",
     "Rapidly build and deploy web or mobile apps using a simple JavaScript API. Scale your apps to millions of users without any backend code.",
