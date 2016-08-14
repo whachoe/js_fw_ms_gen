@@ -3,9 +3,17 @@ require 'vendor/autoload.php';
 
 use Fieg\Markov\MarkovChain;
 
-function r($input)
+function r($input, $num=1)
 {
-    return $input[array_rand($input)];
+    if ($num === 1)
+        return $input[array_rand($input, $num)];
+    else {
+        foreach (array_rand($input, $num) as $key) {
+            $result[] = $input[$key];
+        }
+
+        return $result;
+    }
 }
 
 $names = ["coke", "bootstrap", "ikSelect", "selectik", "tinycon", "foswiki", "socketstream", "elFinder", "basket.js", "jaws",
@@ -117,5 +125,21 @@ $abouts = [
 
 ];
 $fw_about = r($abouts);
+
+$strengths = [
+    '<h3>Sturdy Templates</h3><p class="text-muted">Our templates are updated regularly so they don\'t break.</p>',
+    '<h3>Ready to Ship</h3><p class="text-muted">You can use this framework as is, or you can make changes!</p>',
+    '<h3>Up to Date</h3><p class="text-muted">We update dependencies to keep things fresh.</p>',
+    '<h3>Made with Love</h3><p class="text-muted">You have to make your websites with love these days!</p>',
+    "<h3>Modular and extensible</h3><p class=\"text-muted\">$fw_name is distributed as a standalone server for browser-based JavaScript apps. When you're ready to write custom backend code, you can load the $fw_name modules directly in Node.js. RethinkDB is bundled with $fw_name, so you can make direct database queries on the backend using the powerful query language ReQL, for flexible joins, aggregations, binary file support, and rich querying</p>",
+    "<h3>Realtime by default</h3><p class=\"text-muted\">$fw_name is built on RethinkDB, a massively scalable, open-source database capable of millions of realtime updates per second. $fw_name and RethinkDB push updates to the client in realtime, so your apps can offer engaging experiences with no extra work.</p>",
+    "<h3>Security and authentication</h3><p class=\"text-muted\">Authenticate users through Facebook, Twitter, Google, GitHub, and other services. Secure your app, manage user accounts, sessions, and permissions through convenient APIs.</p>",
+    "<h3>Built with love by the open source community</h3><p class=\"text-muted\">Developed by a core team of realtime data experts and over 100 contributors from around the world, $fw_name is shaped by developers like you in an open development process.</p>",
+    "<h3>Less Code</h3><p class=\"text-muted\">Write dramatically less code with $fw_name's integrated templates that update automatically when the underlying data changes.</p>",
+    "<h3>Time used wisely</h3><p class=\"text-muted\">Don't waste time making trivial choices. $fw_name incorporates common idioms so you can focus on what makes your app special, not reinventing the wheel.</p>",
+    "<h3>Be Productive</h3><p class=\"text-muted\">$fw_name is built for productivity. Designed with developer ergonomics in mind, its friendly APIs help you get your job done—fast.</p>",
+];
+
+$fw_strengths = r($strengths, 4);
 
 include 'template.html';
