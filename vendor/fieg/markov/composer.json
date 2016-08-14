@@ -1,0 +1,15 @@
+{
+  "name": "fieg/markov",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fieg\\Markov\\": "src/Markov"
+    }
+  }
+}

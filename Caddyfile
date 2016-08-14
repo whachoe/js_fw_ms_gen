@@ -1,0 +1,11 @@
+0.0.0.0:80
+
+root /var/www/html
+gzip
+
+log stdout
+errors stdout
+
+ext .html .htm .php
+
+fastcgi / php:9000 php

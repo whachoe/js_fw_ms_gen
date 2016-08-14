@@ -1,0 +1,48 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "2e57eb843de2c72e8297ca1bcd9f7f54",
+    "content-hash": "b9bd1df1ea48cd471b945fc1663e490b",
+    "packages": [
+        {
+            "name": "fieg/markov",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fieg/markov.git",
+                "reference": "1dfd4ed2028d57d25ad4d6d43b49893f439013c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fieg/markov/zipball/1dfd4ed2028d57d25ad4d6d43b49893f439013c1",
+                "reference": "1dfd4ed2028d57d25ad4d6d43b49893f439013c1",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Fieg\\Markov\\": "src/Markov"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2015-05-14 11:53:19"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

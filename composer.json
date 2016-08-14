@@ -1,0 +1,5 @@
+{
+    "require": {
+        "fieg/markov": "^1.0"
+    }
+}

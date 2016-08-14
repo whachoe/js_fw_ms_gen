@@ -1,0 +1,18 @@
+version: '2'
+services:
+  web:
+    image: zzrot/alpine-caddy
+    ports:
+      - 80:80
+    volumes:
+      - .:/var/www/html
+      - ./Caddyfile:/etc/Caddyfile
+  php:
+      image: romcore/fpm
+      user: www-data
+      expose:
+          - "9000"
+      volumes:
+          - .:/var/www/html
+          - ~/.ssh:/var/www/.ssh
+          - ~/.composer:/var/www/.composer
