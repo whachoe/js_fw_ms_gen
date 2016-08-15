@@ -6,10 +6,10 @@ Are you a bit overwhelmed by all the Javascript frameworks out there? Can you im
 Here is the solution: This site-generator creates a brand new marketing site with all the right buzzwords and overpromises.
 Now JS framework developers can focus on what's really important: Their frameworks. Leave the boring website building to a script.    
 
-Run:    
+*Run:*    
 `docker-compose up`    
 You can now surf to http://localhost to see your new site in action.    
 
-Made with:    
+*Made with:    *
 * https://blackrockdigital.github.io/startbootstrap-creative/         
 * http://php.net    
