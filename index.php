@@ -122,6 +122,10 @@ $abouts = [
     "Experience the future of the web platform today with $fw_name's components.",
     "$fw_name is a JavaScript library that helps you to create rich, responsive display and editor user interfaces with a clean underlying data model.",
     "$fw_name isn't just another framework, it's a way of life!",
+    "$fw_name helps you deliver amazing user experiences by unlocking the full potential of the web platform.",
+    "Use $fw_name to make the most of Web Components, a powerful new platform feature for extending HTML and componentizing your apps.",
+    "Use $fw_name to build cutting-edge Progressive Web Apps that load quickly, respond instantly and work from anywhere.",
+
 
 ];
 $fw_about = r($abouts);
@@ -138,6 +142,7 @@ $strengths = [
     "<h3>Less Code</h3><p class=\"text-muted\">Write dramatically less code with $fw_name's integrated templates that update automatically when the underlying data changes.</p>",
     "<h3>Time used wisely</h3><p class=\"text-muted\">Don't waste time making trivial choices. $fw_name incorporates common idioms so you can focus on what makes your app special, not reinventing the wheel.</p>",
     "<h3>Be Productive</h3><p class=\"text-muted\">$fw_name is built for productivity. Designed with developer ergonomics in mind, its friendly APIs help you get your job done—fast.</p>",
+
 ];
 
 $fw_strengths = r($strengths, 4);
